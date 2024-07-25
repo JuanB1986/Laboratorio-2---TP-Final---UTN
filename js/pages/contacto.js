@@ -6,8 +6,8 @@ document.getElementById('formulario').addEventListener('submit', function (event
   btn.value = 'Enviando...';
 
   // Identificadores del servicio de EmailJS
-  const serviceID = 'default_service';
-  const templateID = 'template_9bxqdxa';
+  const serviceID = '';      //Agregar ID Generado en emailJS
+  const templateID = '';     //Agregar template Generado en emailJS
 
   // Envía el formulario utilizando EmailJS
   emailjs.sendForm(serviceID, templateID, this).then(() => {
