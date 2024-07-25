@@ -1,0 +1,62 @@
+html {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h3 i {
+    color: rgb(151, 110, 55);
+}
+
+header h3 i:hover {
+    color: rgb(214, 202, 152);
+}
+
+td i {
+    color: rgb(255, 255, 255);
+}
+
+td i:hover {
+    color: rgb(173, 158, 100);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border: 2px solid rgb(129, 104, 60);
+    border-radius: 5px;
+    background-color: rgb(255, 225, 161);
+    color: rgb(57, 55, 50);
+    font-size: larger;
+    box-shadow: 0px 0px 10px 2px rgb(170, 131, 58);
+}
+
+tbody td {
+    height: 2vh;
+    width: 8%;
+    text-align: center;
+    color: rgb(249, 235, 154);
+    background-color: rgb(137, 98, 59);
+    border-radius: 2px;
+    font-size: medium;
+}
+
+.celdaFecha {
+    font-size: large;
+    font-weight: 800;
+}
+
+.sinDatos {
+    display: none;
+    color: red;
+    font-style: italic;
+    margin-top: 10px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/pages/contacto.css">
+    <link rel="stylesheet" href="../css/alertas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="../js/pages/contacto.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('CcBydL0h8LKhz67zL')</script>
+    <script src="../js/alertas.js"></script>
+
+</head>
+
+<body>
+    <div id="titulo">
+        <h2>Contacto web cotizaciones</h2>
+    </div>
+
+    <!------------------------ FORMULARIO DE CONTACTO ------------------------>
+
+    <form id="formulario" action="" method="post">
+        <h2>Datos de contacto</h2>
+
+        <div class="formLabel">
+            <label for="from_name">Nombre:</label>
+        </div>
+        <input type="text" name="from_name" id="from_name" class="input1" required><br><br>
+
+        <div class="formLabel">
+            <label for="email">Email:</label>
+        </div>
+        <input type="email" id="email" class="input1" required><br><br>
+
+        <div class="formLabel">
+            <label for="message">Mensaje:</label>
+        </div>
+        <textarea name="message" id="message" class="input2" required></textarea>
+
+        <button type="reset" id="formBotonLimpiar">Limpiar</button>
+        <input type="submit" id="formBotonEnviar" value="Enviar">
+    </form>
+    <div id="alerta" class="ocultar"></div>
+
+    <!------------------------ DATOS DE LA INSTITUCIÓN ------------------------>
+
+    <div id="texto">
+        Si tiene alguna sugerencia o inconveniente por favor, complete el siguiente formulario y envíelo. Lo contactaremos a la brevedad.
+        <br><br>
+        Esta web está desarrollada usando: <a href="https://dolarapi.com/" target="_blank">https://dolarapi.com</a>
+    </div>
+
+    <div id="contacto">
+        <div id="contactoTexto">
+            <h2>Contacto</h2>
+            Universidad Tecnológica Nacional <br>
+            Zeballos 1341 - S2000BQA <br>
+            Rosario <br>
+            0341-4481871
+        </div>
+        <img src="../img/UTN_logo.jpg" alt="" id="contactoImagen">
+    </div>
+
+</body>
+
+</html>

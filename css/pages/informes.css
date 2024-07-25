@@ -1,0 +1,154 @@
+html {
+    font-family: sans-serif;
+}
+
+body h2 {
+    text-align: center;
+}
+
+/* SELECTOR Y GRÁFICO */
+
+#contenedorHeader {
+    background-color: rgb(255, 225, 161);
+    color: rgb(57, 55, 50);
+    border: 1px solid rgb(153, 91, 34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+    width: 25%;
+    min-width: max-content;
+    height: 70px;
+}
+
+#graficoContainer {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#graficas {
+    width: 40%;
+    height: 20vh;
+    border: 1px solid rgb(153, 91, 34);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+caption {
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+caption i {
+    color: rgb(83, 127, 147);
+}
+
+div select {
+    width: 80%;
+    border-radius: 5px;
+}
+
+/* TABLA */
+table {
+    margin-top: 5px;
+    width: 100%;
+    border: 2px solid rgb(129, 104, 60);
+    border-radius: 5px;
+    background-color: rgb(169, 146, 95);
+    color: rgb(57, 55, 50);
+    font-size: larger;
+    box-shadow: 0px 0px 10px 2px rgb(170, 131, 58);
+}
+
+tbody td {
+    height: 2vh;
+    width: 8%;
+    text-align: center;
+    color: rgb(67, 92, 147);
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: medium;
+}
+
+.celdaMoneda {
+    font-size: large;
+    font-weight: 800;
+}
+
+.flechaBaja {
+    color: rgb(162, 5, 5);
+    background-color: rgb(255, 146, 146);
+    border-radius: 4px;
+}
+
+.flechaSuba {
+    color: rgb(36, 102, 0);
+    background-color: rgb(164, 242, 165);
+    border-radius: 4px;
+}
+
+@media (min-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+}
+
+@media (min-width: 580px) {
+    div label {
+        padding: 8px 8px;
+    }
+}
+
+/************ FORMULARIO ENVIOS ************/
+#formulario-envio {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 10px;
+    color: #645a2d;
+    background-color: #ccba69;
+    font-weight: bold;
+    z-index: 1;
+    opacity: 0.9; 
+    display: none;
+}
+
+.ocultar-form {
+    display: none;
+}
+
+.input1{
+    width: 95%;
+    border-radius: 10px;
+    height: 20px;
+    border-width: 0px;
+    padding-left: 10px;
+}
+
+.botones{
+    background-color: #b39049;
+    color: #ffffff;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 35%;
+    height: 30px;
+    font-size: medium;
+}
+#formBotonEnviar, #formBotonCerrar {
+    background-color: #b39049;
+    color: #ffffff;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 35%;
+    height: 30px;
+    font-size: medium;
+}

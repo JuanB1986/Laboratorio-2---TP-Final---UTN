@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/pages/informes.css">
+    <link rel="stylesheet" href="../css/alertas.css">
+    <script src="../js/pages/miarchivo.js" defer></script>
+    <script src="../js/alertas.js"></script>
+</head>
+
+<body>
+    <header>
+        <h3>Mi Archivo <i class="fa thin fa-print fa-lg"></i></h3>
+    </header>
+    <main>
+        <div id="imprimir">
+            <table>
+                <thead>
+                    <th>Fecha</th>
+                    <th>Moneda</th>
+                    <th>Compra</th>
+                    <th>Venta</th>
+                    <th>Acción</th>
+                </thead>
+                <tbody id="tablaMonedas">
+                </tbody>
+            </table>
+        </div>
+        <div id="alerta" class="ocultar"></div>
+
+        <p id="sinDatos" class="sinDatos">No hay datos guardados hasta el momento.</p>
+    </main>
+</body>
+
+</html>

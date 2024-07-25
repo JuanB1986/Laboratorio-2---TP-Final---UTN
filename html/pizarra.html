@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizarra de Cotizaciones</title>
+    <link rel="stylesheet" href="../css/pages/pizarra.css">
+    <link rel="stylesheet" href="../css/alertas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/alertas.js"></script>
+    <script src="../js/pages/pizarra.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!------------------------ SELECTOR ------------------------>
+        <h2>Pizarra de cotizaciones</h2>
+        <div id="contenedorHeader">
+            <label for="selectMoneda"> <b>Seleccione una moneda:</b></label>
+            <select id="selectMoneda">
+                <option value="Todas" selected>TODAS</option>
+                <option value="Dolar Oficial">Dólar Oficial</option>
+                <option value="Dolar Blue">Dólar Blue</option>
+                <option value="Dolar Bolsa">Dólar Bolsa (MEP)</option>
+                <option value="Dolar Contado Con Liqui">Dólar Contado Con Liqui (CCL)</option>
+                <option value="Dolar Tarjeta">Dólar Tarjeta</option>
+                <option value="Dolar Mayorista">Dólar Mayorista</option>
+                <option value="Dolar Cripto">Dólar Cripto</option>
+                <option value="Euro">Euro</option>
+                <option value="Real Brasileño">Real Brasileño</option>
+                <option value="Peso Chileno">Peso Chileno</option>
+                <option value="Peso Uruguayo">Peso Uruguayo</option>
+            </select>
+            <div><i class="fas fa-funnel-dollar"></i></div>
+        </div>
+        <p id="fecha_actualizacion">Datos actualizados: DD/MM/AAAA</p>
+        <div id="alerta" class="ocultar"></div>
+    </header>
+    <main>
+    </main>
+    <!------------------------ PIÉ DE PÁGINA ------------------------>
+    <footer>
+        <p id="footerText1"><b>Haga click en la estrella para guardar datos de su cotizacion en favoritos !</b></p>
+        <p id="footerText2">Datos obtenidos de: <a href="http://dolarapi.com" target="_blank">dolarapi.com</a></p>
+    </footer>
+</body>
+
+</html>

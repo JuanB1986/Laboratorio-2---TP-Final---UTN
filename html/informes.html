@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informes</title>
+    <link rel="stylesheet" href="../css/pages/informes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/alertas.css">
+
+    <script src="../js/pages/Chart.min.js"></script>
+    <script src="../js/alertas.js"></script>
+    <script src="../js/pages/informes.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('CcBydL0h8LKhz67zL')</script>
+</head>
+
+<body>
+    <h2>Informes</h2>
+    <!------------------------ SELECTOR Y GRÁFICO ------------------------>
+    <header>
+        <div id="contenedorHeader">
+            <label for="selectMoneda"> <b>Seleccione una moneda:</b></label>
+            <select id="selectMoneda">
+                <option value="Todas">TODAS</option>
+                <option value="Oficial">Dólar Oficial</option>
+                <option value="Blue">Dólar Blue</option>
+                <option value="Bolsa">Dólar Bolsa (MEP)</option>
+                <option value="Contado Con Liqui">Dólar Contado Con Liqui (CCL)</option>
+                <option value="Tarjeta">Dólar Tarjeta</option>
+                <option value="Mayorista">Dólar Mayorista</option>
+                <option value="Cripto">Dólar Cripto</option>
+                <option value="Euro">Euro</option>
+                <option value="Real Brasileño">Real Brasileño</option>
+                <option value="Peso Chileno">Peso Chileno</option>
+                <option value="Peso Uruguayo">Peso Uruguayo</option>
+            </select>
+        </div>
+        <div id="graficoContainer">
+            <canvas id="graficas"></canvas>
+        </div>
+    </header>
+
+    <!------------------------ BOTÓN DE COMPARTIR ------------------------>
+    <div id="botonCompartir">
+        <i class="fa solid fa-share fa-lg"></i>
+        <a href="#" id="compartir-info">Compartir información</a>
+    </div>
+    
+    <!------------------------ TABLA ------------------------>
+    <main>
+        <div>
+            <table>
+                <thead>
+                    <th>Moneda</th>
+                    <th>Fecha</th>
+                    <th>Compra</th>
+                    <th>Venta</th>
+                    <th>Variación</th>
+                </thead>
+                <tbody id="tablaMonedas">
+                </tbody>
+            </table>
+        </div>
+        <div id="alerta" class="ocultar"></div>
+        <div id="formulario-envio" class="ocultar-form"></div>
+
+        <p id="sinDatos" class="sinDatos">No hay datos guardados hasta el momento.</p>
+    </main>
+</body>
+
+</html>
